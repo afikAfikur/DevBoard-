@@ -92,6 +92,8 @@ document.getElementById('clear').addEventListener('click',function(){
     const items=document.querySelectorAll('.tohide');
     for(const item of items){
 item.style.display='none';
+
     }
+    
     
 })

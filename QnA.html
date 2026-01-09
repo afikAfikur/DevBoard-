@@ -56,45 +56,51 @@
         </div>
       </div>
       <div class="rounded-xl grid grid-cols-[3fr_1fr] gap-x-[20px]">
-        <div class="bg-white p-8 h-full rounded-xl">
+        <di class="bg-white p-8 h-full rounded-xl">
           <div
             id="QuestionsContainer"
-            class="rounded-xl h-full gap-[20px] flex flex-col"
+            class=" rounded-xl h-full gap-[20px] flex flex-col"
           >
             <div
               id="Questions"
               class="text-[16px] font-medium bg-[#F4F7FF] p-3 rounded-xl w-full"
             >
+            <div id="QuestionsContainerforQ" class="flex flex-col gap-[15px]">
+
+            <div>
+
               <p>
                 <span class="font-bold">Question-1:</span> What are the
                 different ways to select an element in the DOM?
               </p>
             </div>
+              </div>
+            </div>
 
             <form id="ansers" class="flex gap-4 w-full">
               
-                <input
+                <input id="ansr"
                   type="text"
                   placeholder="Enter Your Answer!"
                   class="rounded-xl text-[16px] p-2 font-medium bg-[#F4F7FF] w-full"
                 />
              
               <button
-                class="border border-blue-950 bg-gradient-to-r from-blue-500 to-blue-900 text-white rounded-xl px-4 shadow-lg py-2"
+                class="border border-blue-950 bg-gradient-to-r from-blue-500 to-blue-900 text-white rounded-xl px-4 shadow-lg py-2 "
               >
                 Submit
               </button>
             </form>
-              <div class="flex items-center justify-center">
-            <button
-              class="border border-blue-950 bg-gradient-to-r from-blue-500 to-blue-900 text-white rounded-xl px-4 shadow-lg py-2"
+              
+          </div>
+          <div class="flex items-center justify-center">
+            <button id="clearall"
+              class="border border-blue-950 bg-gradient-to-r from-blue-500 to-blue-900 text-white rounded-xl px-4 shadow-lg py-2 "
             >
               Clear Questions
             </button>
           </div>
-          </div>
-          
-        </div>
+        </di v>
         <div class="bg-white rounded-xl h-full p-8 flex flex-col gap-5">
           <div class="flex items-center justify-center">
             <img class="w-[20px] h-[20px]" src="./assets/activity.png" alt="" />
@@ -106,13 +112,13 @@
           <hr />
           <form id="containerHistory" class="flex flex-col gap-4">
             <div class="text-[16px] font-medium bg-[#F4F7FF] rounded-xl">
-              <input
+              <input id="adq"
                 type="text"
                 placeholder="Enter Your Questions!"
-                class="w-full rounded-xl"
+                class="w-full rounded-xl p-2"
               />
             </div>
-            <button
+            <button id="qsub"
               class="border border-blue-950 bg-gradient-to-r from-blue-500 to-blue-900 text-white rounded-xl px-4 shadow-lg py-2 mx-24"
             >
               Submit
@@ -122,7 +128,9 @@
       </div>
     </div>
     <script>
-        
+      
+   
+     
     </script>
     <script src="./script/QNA.js"></script>
   </body>
