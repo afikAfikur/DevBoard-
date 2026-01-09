@@ -54,3 +54,18 @@ document.getElementById("ansers").addEventListener("submit", function (event) {
 document.getElementById("clearall").addEventListener("click", function () {
   location.reload();
 });
+
+
+
+ document.getElementById('themebtn').addEventListener('click',function(event){
+            event.preventDefault();
+            const colors = [
+ "#FFE4E6", "#FADADD", "#FFF0F3",
+  "#FFF9C4", "#FFF3B0", "#FFFDE7",
+  "#E3F2FD", "#EAF4FF", "#DCEEFF",
+  "#FFE5B4", "#FFD6A5", "#FFF1E6"
+]
+ const randomIndex = Math.floor(Math.random() * colors.length);
+  const randomColor = colors[randomIndex];
+document.getElementById('bodycolor').style.background=randomColor;
+        })
